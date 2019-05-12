@@ -24,14 +24,21 @@
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма Стоимость-->
-        <!-- Здесь будет форма Сетка-->
-        <!-- Здесь будет форма Особенности-->
+        <!-- Здесь будет форма -->
       </section>
-      <section class="filters">
+      <div class="filters">
         <h2 class="visually-hidden">Сортировка товаров</h2>
-        <!-- Здесь будет форма Сортировка-->
-      </section>
+        <p class="sorting">Сортировать:</p>
+        <ul class="sorting-type"> 
+          <li><a class="sorting-type-current">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <ul class="sorting-direction">
+          <li><a class="sorting-direction-current"><img src="img/down.svg"></a></li>
+          <li><a href="#"><img src="img/up.svg"></a></li>
+        </ul>
+      </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <!-- Catalog-items -->
@@ -81,7 +88,7 @@
         </ul>
       </section>
       <div class="paginator">
-        <a href="#1" class="paginator-current">1</a>
+        <a class="paginator-current">1</a>
         <a href="#2">2</a>
         <a href="#3">3</a>
         <a href="#next">Следующая</a>
@@ -89,12 +96,12 @@
       <!-- Map -->
       <div class="map">
         <!-- Здесь будет карта -->
-      	<article class="contacts">
+      	<div class="contacts">
       	  <b class="contacts-title">NЁRDS DESIGN STUDIO</b>
       	  <p class="contacts-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-text">тел. +7 (812) 275-75-75</p> 
+          <a href="tel:+78122757575">+7 (812) 275-75-75</a>  
           <a class="contacts-btn">Напишите нам</a>
-      	</article>
+      	</div>
       </div>
     </main>
 <!-- Footer -->
