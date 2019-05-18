@@ -224,8 +224,9 @@
 <!-- Модальное окно -->
 
     <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="feedback-title">Напишите нам</legend>
           <p>
             <label>Ваше имя:
               <input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -244,10 +245,11 @@
           <button class="button" type="submit">
             Отправить
           </button>
-        </form>
-        <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">
-        </button>
-    </section>    
+        </fieldset>  
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">
+      </button>
+    </section>  
 
   </body>
 </html>
