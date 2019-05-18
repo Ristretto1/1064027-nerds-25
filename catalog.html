@@ -30,12 +30,17 @@
           <fieldset>
             <legend>Стоимость:</legend>
               <div class="price-control">
-                <label>
-                  от <input class="min-price" type="text" value="0">
-                </label>
-                <label>
-                  до <input class="max-price" type="text" value="15 000">
-                </label>
+                <div class="filter-range-wrapper">
+                  <div class="filter-range">
+                    <div class="filter-range-scale">
+                      <div class="filter-range-bar"></div>
+                    </div>
+                    <button class="filter-range-handle min"></button>
+                    <button class="filter-range-handle max"></button>
+                  </div>
+                </div>
+                <label>От<input class="min-price" type="text" value="0"></label>
+                <label>До<input class="max-price" type="text" value="15 000"></label>
               </div>
           </fieldset>
           <fieldset>
