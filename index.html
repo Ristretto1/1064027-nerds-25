@@ -17,7 +17,7 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <a class="cart">Корзина</a>
+          <a href="#" class="cart">Корзина</a>
         </nav>
     </header>
     <main>
@@ -66,6 +66,7 @@
       </section>
   <!-- About-us -->
       <section class="about-us">
+      	<h2 class="visually-hidden">О компании</h2>
       	<div class="advantages">
           <b class="advantages-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -93,16 +94,18 @@
           </table>
         </div>
       </section>
-      <!-- Partners -->
-      <ul class="partners">
-      	<li><img src="img/htmlacdemy-logo.png" alt="Логотип HTML-Academy" width="199" height="68"></li>
-      	<li><img src="img/borodinsli-logo.png" alt="Логотип Барбершопа Бородинский" width="209" height="90"></li>
-      	<li><img src="img/pink-logo.png" alt="Логотип сервиса Pink" width="185" height="52"></li>
-      	<li><img src="img/mishka-logo.png" alt="Логотип интернет-магазина Мишка" width="173" height="84"></li>
+      <!-- Сustomers -->
+      <h2 class="visually-hidden">Клиенты</h2>
+      <ul class="сustomers">
+      	<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacdemy-logo.png" alt="Логотип HTML-Academy" width="199" height="68"></a></li>
+      	<li><a href=""><img src="img/borodinsli-logo.png" alt="Логотип Барбершопа Бородинский" width="209" height="90"></a></li>
+      	<li><a href=""><img src="img/pink-logo.png" alt="Логотип сервиса Pink" width="185" height="52"></a></li>
+      	<li><a href=""><img src="img/mishka-logo.png" alt="Логотип интернет-магазина Мишка" width="173" height="84"></a></li>
       </ul>
       <!-- Map -->
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="map">
-        <!-- Здесь будет карта -->
+        <img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
       	<div class="contacts">
       	  <b class="contacts-title">NЁRDS DESIGN STUDIO</b>
       	  <p class="contacts-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
@@ -114,14 +117,45 @@
 <!-- Footer -->
     <footer>
       <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button social-button-vk" href="#" aria-label="Нёрдс Вконтакте"></a></li>
+        <li><a class="social-button social-button-fb" href="#" aria-label="Нёрдс в Фейсбуке"></a></li>
+        <li><a class="social-button social-button-insta" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
       </ul>
       <div>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+<!-- Модальное окно -->
+
+    <section class="modal modal-feedback">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      	<fieldset>
+      	  <legend class="feedback-title">Напишите нам</legend>
+          <p>
+          	<label>Ваше имя:
+              <input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </p>
+          <p>
+          	<label>Ваш e-mail:
+              <input class="feedback-email" type="text" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+          <p>
+          	<label>Текст письма:
+              <input class="feedback-text" type="text" name="text" placeholder="В свободной форме">
+            </label>
+          </p>
+          <button class="button" type="submit">
+            Отправить
+          </button>
+        </fieldset>  
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">
+      </button>
+    </section>
+
   </body>
 </html>
