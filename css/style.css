@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  background-color: #eeeeee;
+}
+
+.main-navigation a,
+.site-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active,
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation,
+.services-list {
+  list-style: none
+}
+
+.slider {
+  background-color: #eeeeee
+}
+
+.slide-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.slide-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.slide-btn:hover {
+  background-color: #e74246;
+}
+
+.slide-btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.services-list h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-btn-1,
+.services-btn-2,
+.services-btn-3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.services-btn-2 {
+  background-color: #00ca74;
+}
+.services-btn-3 {
+  background-color: #efc84a;
+}
+
+.services-btn-1:hover {
+  background-color: #e74246;
+}
+
+.services-btn-1:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.services-btn-2:hover {
+  background-color: #00bc6c;
+}
+
+.services-btn-2:active {
+  background-color: #00aa62;
+  color: rgba(0, 1, 1, 0.1);
+}
+
+.services-btn-3:hover {
+  background-color: #eab534;
+}
+
+.services-btn-3:active {
+  background-color: #e5a722;
+  color: rgba(0, 1, 1, 0.1);
+}
+
+.advantages-lead {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+
+  color: #000000;
+}
+
+.advantages-list-title,
+.stats-title {
+  font-weight: 700;
+}
+
+.stats-content {
+  line-height: 18px;
+}
+
+.percent {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10px;
+
+  color: #000000;
+}
+
+.contacts-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.contacts-text,
+.tel {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts-btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  background-color: #fb565a;
+}
+
+.contacts-btn:hover {
+  background-color: #e74246;
+}
+
+.contacts-btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
