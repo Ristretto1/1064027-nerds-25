@@ -185,3 +185,83 @@ a {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+
+.loyalty-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+
+  color: #000000);
+}
+
+.loyalty-text {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #444444;
+}
+.modal {
+  display: none;
+}
+.feedback-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+
+  color: #000000;
+}
+
+.feedback-form label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+
+  border: 2px solid #d7dcde;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form textarea:hover {
+  color: rgba(68, 68, 68, 0.5);
+
+  border-color: #b4b9bb;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #000000;
+  color: #444444;
+}
+
+.feedback-form input:invalid ,
+.feedback-form textarea:invalid  {
+  border-color: #e74246;
+  color:#e74246 ;
+}
+
+.feedback-btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+
+  background-color: #fb565a;
+}
+
+.feedback-btn:hover {
+  background-color: #e74246;
+}
+
+.feedback-btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
