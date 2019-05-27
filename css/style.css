@@ -13,14 +13,37 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.page-header {
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
   font-weight: 500;
-
-  background-color: #eeeeee;
 }
 
 .main-navigation a,
@@ -47,8 +70,22 @@ a {
   list-style: none
 }
 
+.site-navigation {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+ }
+
+ .cart {
+  width: 180px;
+ }
+
 .slider {
   background-color: #eeeeee
+}
+
+.slide {
+  display: flex;
 }
 
 .slide-title {
@@ -58,6 +95,10 @@ a {
   color: #000000;
 }
 
+.slide-col-1 p {
+  padding-top: 20px;
+}
+
 .slide-btn {
   font-size: 16px;
   font-weight: 500;
@@ -65,6 +106,11 @@ a {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  vertical-align: middle;
+  padding: 15px 0;
+  width: 240px;
+  border-radius: 4px;
+  margin-top: 45px;
 
   background-color: #fb565a;
 }
@@ -78,12 +124,31 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.services {
+  margin-bottom: 115px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-list h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-btn {
+  vertical-align: middle;
+  padding: 15px 0;
+  width: 160px;
+  border-radius: 4px;
+  margin-top: 35px;
 }
 
 .services-btn-1,
@@ -133,6 +198,28 @@ a {
   color: rgba(0, 1, 1, 0.1);
 }
 
+.services-text {
+  width: 260px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+/*
+.about-us > * {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.about-us > * > *{
+  background-color: rgba(255, 255, 0, 0.3);
+}
+*/
+.advantages {
+  width: 660px;
+  margin-top: 40px;
+}
+
 .advantages-lead {
   font-size: 45px;
   font-weight: 500;
@@ -141,24 +228,57 @@ a {
   color: #000000;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list li,
+.advantages-list-title {
+  margin-bottom: 30px;
+}
+
+.advantages-text {
+  margin: 40px 0;
+}
+
+
 .advantages-list-title,
 .stats-title {
   font-weight: 700;
   text-transform: uppercase
 }
 
+.stats {
+  width: 360px;
+}
+
+.stats-title {
+  text-align: center;
+  margin: 0;
+  margin-top: 35px;
+}
+
 .stats-content {
   line-height: 18px;
+  margin-top: 50px;
+  width: 100%;
 }
+
 
 .percent {
   font-size: 45px;
   font-weight: 700;
   line-height: 10px;
-
+ 
   color: #000000;
 }
 
+.percent td {
+  padding-bottom: 35px;
+  padding-right: 20px;
+
+}
 .contacts-title {
   font-size: 18px;
   font-weight: 700;
