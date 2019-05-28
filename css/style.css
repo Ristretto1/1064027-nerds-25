@@ -404,6 +404,7 @@ a {
   list-style: none;
   align-items: center;
   margin-top: 120px;
+  margin-bottom: 117px;
 
 }
 
@@ -420,7 +421,19 @@ a {
   margin-left: 120px;
 }
 
+.map {
+  height: 416px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: -120px 0;
+  padding: 54px 20px;
+}
 
+.contacts {
+  width: 319px;
+  height: 308px;
+  background-color: white;
+}
 
 
 
