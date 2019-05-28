@@ -13,11 +13,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -33,7 +28,7 @@ img {
 }
 .page-header {
     background-color: #eeeeee;
-    margin-bottom: 76px;
+    margin-bottom: 80px;
 }
 
 .slider {
@@ -250,14 +245,17 @@ img {
  }
 
 .services {
-  margin-bottom: 115px;
+  margin-bottom: 122px;
+}
+
+.services-item {
+  margin-right: 100px;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .services-list h3 {
@@ -266,14 +264,15 @@ img {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin: 17px 0;
 }
 
 .services-btn {
   vertical-align: middle;
-  padding: 15px 0;
+  padding: 16px 0;
   width: 160px;
   border-radius: 4px;
-  margin-top: 35px;
+  margin-top: 31px;
 }
 
 .services-btn-1,
@@ -330,12 +329,11 @@ img {
 .about-us {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
-}
+ }
 
 .advantages {
   width: 660px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .advantages-lead {
@@ -351,13 +349,17 @@ img {
   padding: 0;
 }
 
-.advantages-list li,
+.advantages-list li {
+  margin-top: 25px;
+  margin-left: 37px;
+}
 .advantages-list-title {
-  margin-bottom: 30px;
+  /*margin-bottom: 25px;*/
 }
 
 .advantages-text {
-  margin: 40px 0;
+  margin-top: 34px;
+  margin-bottom: 38px
 }
 
 
@@ -374,12 +376,12 @@ img {
 .stats-title {
   text-align: center;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .stats-content {
   line-height: 18px;
-  margin-top: 50px;
+  margin-top: 55px;
   width: 100%;
 }
 
@@ -393,10 +395,35 @@ img {
 }
 
 .percent td {
-  padding-bottom: 35px;
-  padding-right: 20px;
+  width: 93px;
+  padding-bottom: 33px;
+}
+
+.сustomers {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 120px;
 
 }
+
+.сustomers li:first-child {
+  margin-left: 31px;
+}
+.сustomers li:nth-child(2) {
+  margin-left: 96px;
+}
+.сustomers li:nth-child(3) {
+  margin-left: 103px;
+}
+.сustomers li:last-child {
+  margin-left: 120px;
+}
+
+
+
+
+
 .contacts-title {
   font-size: 18px;
   font-weight: 700;
