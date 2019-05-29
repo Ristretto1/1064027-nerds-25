@@ -14,21 +14,35 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .page-header {
     background-color: #eeeeee;
-    margin-bottom: 80px;
+  /*  margin-bottom: 80px;*/
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
 }
 
 .slider {
@@ -237,6 +251,7 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
  }
 
  .cart {
@@ -245,7 +260,8 @@ a {
  }
 
 .services {
-  margin-bottom: 122px;
+  padding-bottom: 122px;
+  padding-top: 80px;
 }
 
 .services-item {
@@ -403,10 +419,22 @@ a {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-top: 120px;
-  margin-bottom: 117px;
+  padding-top: 120px;
+  padding-bottom: 117px;
 
 }
+
+.сustomers-logo {
+  opacity: 0.2;
+}
+
+.сustomers-logo:hover {
+  opacity: 1;
+}
+.сustomers-logo:active {
+  opacity: 0.1;
+}
+
 
 .сustomers li:first-child {
   margin-left: 31px;
@@ -422,17 +450,20 @@ a {
 }
 
 .map {
-  height: 416px;
+  height: 362px;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-position: -120px 0;
-  padding: 54px 20px;
+  background-position: 5px -152px;
+  padding-top: 54px;
+  padding-left: 372px;
 }
 
 .contacts {
   width: 319px;
   height: 308px;
   background-color: white;
+  padding: 31px 49px;
+  box-sizing: border-box;
 }
 
 
@@ -441,6 +472,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  padding-bottom: 5px;
 
   color: #000000;
 }
@@ -453,12 +485,20 @@ a {
 }
 
 .contacts-btn {
+  display: block;
   color: #ffffff;
   line-height: 18px
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-
+  box-sizing: border-box;
+  width: 219px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding-top: 13px;
+  margin-top: 33px;
+  margin-left: 1px;
   background-color: #fb565a;
 }
 
@@ -469,6 +509,10 @@ a {
 .contacts-btn:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer {
+  display: flex;
 }
 
 .loyalty-title {
