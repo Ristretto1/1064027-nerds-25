@@ -46,7 +46,7 @@ a {
 
 .slider {
   position: relative;
-  
+
   background-color: #eeeeee;
 }
 
@@ -55,7 +55,7 @@ a {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-  
+
   width: 160px;
   height: 18px;
 
@@ -66,36 +66,36 @@ a {
 
 .slider-controls label {
   position: relative;
-  
+
   display: inline-block;
   width: 18px;
   height: 18px;
   padding: 8px;
-  
+
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls label::after {
   content: "";
-  
+
   position: absolute;
   top: 8px;
   left: 8px;
   z-index: 1;
-  
+
   width: 18px;
   height: 18px;
-  
+
   background: #ffffff;
-  
+
   border-radius: 50%;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -154,7 +154,7 @@ a {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-  
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -170,14 +170,14 @@ a {
   display: block;
   width: 240px;
   padding: 16px 0;
-  
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  
+
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -405,7 +405,7 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 10px;
- 
+
   color: #000000;
 }
 
@@ -557,7 +557,7 @@ a {
   background-position: 50% 50%;
 }
 
-/*Не понимаю, как правильно сделать полупрозрачность самих лого соц сетей по стайлгайду в состоянии :active. 
+/*Не понимаю, как правильно сделать полупрозрачность самих лого соц сетей по стайлгайду в состоянии :active.
 Единственное, что надумал, так это (ниже), но это не решает проблему
 .social-button-vk:active {
 opacity: 0.3;
@@ -678,7 +678,7 @@ opacity: 0.3;
 .filter-item {
   margin: 0;
   padding: 0;
-  
+
   border: none;
 }
 
@@ -697,15 +697,15 @@ opacity: 0.3;
 
 .range-controls {
   position: relative;
-  
+
   height: 41px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  
+
   background-color: #f1f1f1;
-  
+
   border-radius: 5px;
 }
 
@@ -726,7 +726,7 @@ opacity: 0.3;
   position: absolute;
   top: 31px;
   left: 0;
-  
+
   width: 4px;
   height: 4px;
   padding: 0;
@@ -754,7 +754,7 @@ opacity: 0.3;
 .price-controls label {
   display: inline-block;
   width: 50%;
-  
+
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -763,16 +763,17 @@ opacity: 0.3;
   width: 60px;
   padding: 10px;
   margin-left: 10px;
-  
+
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
-  
+
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
 }
+
 
 .max-price {
   text-align: right;
@@ -846,7 +847,7 @@ opacity: 0.3;
   padding-top: 47px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .catalog-item {
