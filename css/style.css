@@ -951,6 +951,10 @@ opacity: 0.3;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  display: block;
+  width: 240px;
+  padding: 16px 0;
 }
 
 .filter-button:hover {
