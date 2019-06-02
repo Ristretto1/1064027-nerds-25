@@ -67,39 +67,36 @@
               <legend class="filter-position">Сетка:</legend>
               <ul class="filter-aside">
                 <li class="filter-option">
-
-                    <input
-                      class="visually-hidden filter-input filter-input-radio"
-                      type="radio"
-                      name="product-group"
-                      value="adaptive"
-                      id="adaptive"
-                      checked
-                    /><label for="adaptive">
+                  <input
+                    class="visually-hidden filter-input filter-input-radio"
+                    type="radio"
+                    name="product-group"
+                    value="adaptive"
+                    id="adaptive"
+                    checked
+                  /><label for="adaptive">
                     Адаптивная
                   </label>
                 </li>
                 <li class="filter-option">
-
-                    <input
-                      class="visually-hidden filter-input filter-input-radio"
-                      type="radio"
-                      name="product-group"
-                      value="fixed"
-                      id="fixed"
-                    /><label for="fixed">
+                  <input
+                    class="visually-hidden filter-input filter-input-radio"
+                    type="radio"
+                    name="product-group"
+                    value="fixed"
+                    id="fixed"
+                  /><label for="fixed">
                     Фиксированная
                   </label>
                 </li>
                 <li class="filter-option">
-
-                    <input
-                      class="visually-hidden filter-input filter-input-radio"
-                      type="radio"
-                      name="product-group"
-                      value="rubber"
-                      id="rubber"
-                    /><label for="rubber">
+                  <input
+                    class="visually-hidden filter-input filter-input-radio"
+                    type="radio"
+                    name="product-group"
+                    value="rubber"
+                    id="rubber"
+                  /><label for="rubber">
                     Резиновая
                   </label>
                 </li>
@@ -185,8 +182,19 @@
                 <li><a href="#">По названию</a></li>
               </ul>
               <ul class="sorting-direction">
-                <li><a class="sorting-direction-current sorting-direction-down sorting-direction-item" aria-label="Сортировка по убыванию"></a></li>
-                <li><a class="sorting-direction-up sorting-direction-item" href="#" aria-label="Сортировка по возрастанию"></a></li>
+                <li>
+                  <a
+                    class="sorting-direction-current sorting-direction-down sorting-direction-item"
+                    aria-label="Сортировка по убыванию"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="sorting-direction-up sorting-direction-item"
+                    href="#"
+                    aria-label="Сортировка по возрастанию"
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -330,7 +338,7 @@
             <p>
               тел. <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-            <a href="#" class="contacts-btn">НАПИШИТЕ НАМ</a>
+            <a href="#modal" class="contacts-btn">НАПИШИТЕ НАМ</a>
           </div>
         </div>
       </div>
@@ -368,57 +376,60 @@
 
     <!-- Модальное окно -->
 
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback" id="modal">
+      <!-- <button
+        class="modal-close"
+        type="button"
+      ></button> -->
+      <a
+        class="modal-close"
+        href=""
+        aria-label="Закрыть окно обратной связи"
+      ></a>
       <form
         class="feedback-form"
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <fieldset>
+        <fieldset class="feedback-block">
           <legend class="feedback-title">Напишите нам</legend>
-          <p>
-            <label
-              >Ваше имя:
+          <div class="feedback-wrapper">
+            <p class="feedback-item">
+              <label for="name"> Ваше имя:</label>
               <input
                 class="feedback-name"
                 type="text"
                 name="name"
+                id="name"
                 placeholder="Имя Фамилия"
               />
-            </label>
-          </p>
-          <p>
-            <label
-              >Ваш e-mail:
+            </p>
+            <p class="feedback-item">
+              <label for="email">Ваш e-mail:</label>
               <input
                 class="feedback-email"
-                type="text"
+                type="email"
                 name="email"
+                id="email"
                 placeholder="email@example.com"
               />
-            </label>
-          </p>
-          <p>
-            <label
-              >Текст письма:
+            </p>
+            <p class="feedback-item">
+              <label for="text">Текст письма:</label>
               <textarea
                 class="feedback-text"
                 name="text"
                 placeholder="В свободной форме"
-                rows="3"
+                id="text"
+                rows="4"
               ></textarea>
-            </label>
-          </p>
-          <button class="button" type="submit">
+            </p>
+          </div>
+          <button class="feedback-btn" type="submit">
             Отправить
           </button>
         </fieldset>
       </form>
-      <button
-        class="modal-close"
-        type="button"
-        aria-label="Закрыть окно обратной связи"
-      ></button>
     </section>
   </body>
 </html>

@@ -211,46 +211,46 @@
       </section>
       <!-- Сustomers -->
       <h2 class="visually-hidden">Клиенты</h2>
-<div class="customers-wrapper">
-      <ul class="сustomers">
-        <li class="сustomers-logo">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"
-            ><img
-              src="img/htmlacdemy-logo.png"
-              alt="Логотип HTML-Academy"
-              width="199"
-              height="68"
-          /></a>
-        </li>
-        <li class="сustomers-logo">
-          <a href="#"
-            ><img
-              src="img/borodinsli-logo.png"
-              alt="Логотип Барбершопа Бородинский"
-              width="209"
-              height="90"
-          /></a>
-        </li>
-        <li class="сustomers-logo">
-          <a href="#"
-            ><img
-              src="img/pink-logo.png"
-              alt="Логотип сервиса Pink"
-              width="185"
-              height="52"
-          /></a>
-        </li>
-        <li class="сustomers-logo">
-          <a href="#"
-            ><img
-              src="img/mishka-logo.png"
-              alt="Логотип интернет-магазина Мишка"
-              width="173"
-              height="84"
-          /></a>
-        </li>
-      </ul>
-</div>
+      <div class="customers-wrapper">
+        <ul class="сustomers">
+          <li class="сustomers-logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              ><img
+                src="img/htmlacdemy-logo.png"
+                alt="Логотип HTML-Academy"
+                width="199"
+                height="68"
+            /></a>
+          </li>
+          <li class="сustomers-logo">
+            <a href="#"
+              ><img
+                src="img/borodinsli-logo.png"
+                alt="Логотип Барбершопа Бородинский"
+                width="209"
+                height="90"
+            /></a>
+          </li>
+          <li class="сustomers-logo">
+            <a href="#"
+              ><img
+                src="img/pink-logo.png"
+                alt="Логотип сервиса Pink"
+                width="185"
+                height="52"
+            /></a>
+          </li>
+          <li class="сustomers-logo">
+            <a href="#"
+              ><img
+                src="img/mishka-logo.png"
+                alt="Логотип интернет-магазина Мишка"
+                width="173"
+                height="84"
+            /></a>
+          </li>
+        </ul>
+      </div>
       <!-- Map -->
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map">
@@ -270,7 +270,7 @@
             <p>
               тел. <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-            <a href="#" class="contacts-btn">НАПИШИТЕ НАМ</a>
+            <a href="#modal" class="contacts-btn">НАПИШИТЕ НАМ</a>
           </div>
         </div>
       </div>
@@ -308,57 +308,60 @@
 
     <!-- Модальное окно -->
 
-    <section class="modal modal-feedback">
-      <form
-        class="feedback-form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
-        <fieldset>
-          <legend class="feedback-title">Напишите нам</legend>
-          <p>
-            <label
-              >Ваше имя:
-              <input
-                class="feedback-name"
-                type="text"
-                name="name"
-                placeholder="Имя Фамилия"
-              />
-            </label>
-          </p>
-          <p>
-            <label
-              >Ваш e-mail:
-              <input
-                class="feedback-email"
-                type="text"
-                name="email"
-                placeholder="email@example.com"
-              />
-            </label>
-          </p>
-          <p>
-            <label
-              >Текст письма:
-              <textarea
-                class="feedback-text"
-                name="text"
-                placeholder="В свободной форме"
-                rows="3"
-              ></textarea>
-            </label>
-          </p>
-          <button class="feedback-btn" type="submit">
-            Отправить
-          </button>
-        </fieldset>
-      </form>
-      <button
-        class="modal-close"
-        type="button"
-        aria-label="Закрыть окно обратной связи"
-      ></button>
-    </section>
-  </body>
-</html>
+    <section class="modal modal-feedback" id="modal">
+        <!-- <button
+          class="modal-close"
+          type="button"
+        ></button> -->
+        <a
+          class="modal-close"
+          href=""
+          aria-label="Закрыть окно обратной связи"
+        ></a>
+        <form
+          class="feedback-form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <fieldset class="feedback-block">
+            <legend class="feedback-title">Напишите нам</legend>
+            <div class="feedback-wrapper">
+              <p class="feedback-item">
+                <label for="name"> Ваше имя:</label>
+                <input
+                  class="feedback-name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Имя Фамилия"
+                />
+              </p>
+              <p class="feedback-item">
+                <label for="email">Ваш e-mail:</label>
+                <input
+                  class="feedback-email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email@example.com"
+                />
+              </p>
+              <p class="feedback-item">
+                <label for="text">Текст письма:</label>
+                <textarea
+                  class="feedback-text"
+                  name="text"
+                  placeholder="В свободной форме"
+                  id="text"
+                  rows="4"
+                ></textarea>
+              </p>
+            </div>
+            <button class="feedback-btn" type="submit">
+              Отправить
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </body>
+  </html>
