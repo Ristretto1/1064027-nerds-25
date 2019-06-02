@@ -213,6 +213,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 0;
   padding-top: 26px;
+  padding-bottom: 3px;
 
   color: #000000;
 }
@@ -279,8 +280,9 @@ input[type="radio"].visually-hidden {
 
 .services-wrapper {
   width: 1160px;
-  border-bottom: 2px solid #eeeeee;
   padding-bottom: 81px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 .services-item {
   margin-right: 100px;
@@ -387,22 +389,26 @@ input[type="radio"].visually-hidden {
 .advantages-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .advantages-list li {
+  position: relative;
+
   margin-top: 24px;
   margin-left: 37px;
-  position: relative;
 }
 
 .advantages-list li::before {
   content: "";
+  position: absolute;
   top: 12px;
   left: -35px;
-  position: absolute;
+
   width: 25px;
   height: 2px;
+
   background-color: #fb565a;
 }
 
@@ -451,19 +457,19 @@ input[type="radio"].visually-hidden {
 .customers-wrapper {
   width: 1160px;
   margin: 0 auto;
-  border-bottom: 2px solid #eeeeee;
-  border-top: 2px solid #eeeeee;
+  margin-bottom: 80px;
   padding-top: 33px;
   padding-bottom: 18px;
-  margin-bottom: 80px;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .сustomers {
-  padding: 0;
-  padding-left: 32px;
-
   display: flex;
   align-items: center;
+  padding: 0;
+  padding-left: 32px;
 
   list-style: none;
 }
@@ -734,12 +740,17 @@ opacity: 0.3;
 .filters-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 37px;
+  margin-top: 36px;
+}
+
+.filter-aside {
+  margin: 0;
+  padding: 16px 0;
 }
 
 .filters {
   width: 400px;
-  padding-top: 21px;
+  padding-top: 23px;
 }
 
 .filter-item {
@@ -748,6 +759,9 @@ opacity: 0.3;
 
   border: none;
 }
+
+
+
 
 .range-filter {
   width: 260px;
@@ -784,6 +798,7 @@ opacity: 0.3;
 .range-controls .bar {
   width: 70%;
   height: 2px;
+  margin-top: 2px;
 
   background: #00ca74;
 }
@@ -847,10 +862,87 @@ opacity: 0.3;
 }
 
 .filter-position {
-  padding-top: 57px;
+  padding-top: 59px;
 }
 
+.filter-input-checkbox + label,
+.filter-input-radio + label {
+  position: relative;
+
+  padding-left: 36px;
+
+  cursor: pointer;
+}
+
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  width: 27px;
+
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label:hover::before,
+.filter-input-radio + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio:checked + label:disabled::before,
+.filter-input-radio + label:disabled::before {
+  opacity: 0.1;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before {
+  width: 27px;
+
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label:hover::before,
+.filter-input-checkbox + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked + label:disabled::before,
+.filter-input-checkbox + label:disabled::before {
+  opacity: 0.1;
+}
+
+
 .filter-option {
+  position: relative;
+
   padding-top: 3px;
   padding-bottom: 17px;
 }
@@ -862,7 +954,7 @@ opacity: 0.3;
   display: flex;
   flex-direction: column;
   width: 800px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .sort {
@@ -902,23 +994,84 @@ opacity: 0.3;
   padding-left: 6px;
 }
 
+.sorting-direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 39px;
+  padding-top: 2px;
+}
+
+.sorting-direction-down {
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-right: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.sorting-direction-up {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  opacity: 0.2;
+}
+
+
+
+
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+
   padding-top: 64px;
   padding-left: 14px;
 }
-
+.catalog-item-image {
+  padding: 0;
+  margin: 0;
+}
 .catalog-item {
+  position: relative;
+
   width: 360px;
-  margin-bottom: 34px;
+  margin-bottom: 66px;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 7px 9px -3px #cfcfcf;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+
+  width: 360px;
+  height: 40px;
+
+  background-image: url(../img/browser.svg);
+  opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 .item-price {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 29px;
+  padding-top: 14px;
+
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -926,6 +1079,7 @@ opacity: 0.3;
 
   background-color: #fb565a;
   border: none;
+  border-radius: 4px;
 }
 
 .item-price:hover {
@@ -939,16 +1093,31 @@ opacity: 0.3;
 }
 
 .item-description {
+  position: absolute;
+  bottom: 0;
+
   display: none;
+  box-sizing: border-box;
+  width: 360px;
+  min-height: 231px;
+  padding-top: 20px;
+
+
+  text-align: center;
 
   background-color: #eeeeee;
+}
+
+
+
+.catalog-item:hover .item-description {
+  display: block;
 }
 
 .item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
@@ -973,14 +1142,29 @@ opacity: 0.3;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.sorting-direction-item:not(.sorting-direction-current) {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .sorting-type a:hover:not(.sorting-type-current) {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.sorting-direction a:hover:not(.sorting-direction-current) {
+  opacity: 0.6;
+}
+
 .sorting-type a:active:not(.sorting-type-current) {
   color: #000000;
+}
+
+.sorting-direction a:active:not(.sorting-direction-current) {
+  opacity: 1;
 }
 
 .sorting-type-current {
@@ -1036,7 +1220,7 @@ opacity: 0.3;
 .paginator {
   display: flex;
   width: 460px;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
   margin-left: 14px;
 }
 
