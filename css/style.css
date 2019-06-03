@@ -342,6 +342,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+  box-shadow: 0px 3px 0px 0px #c13135 inset;
 }
 
 .services-btn-2:hover {
@@ -352,6 +353,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 1, 1, 0.1);
 
   background-color: #00aa62;
+  box-shadow: 0px 3px 0px 0px #009958 inset;
 }
 
 .services-btn-3:hover {
@@ -362,6 +364,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 1, 1, 0.1);
 
   background-color: #e5a722;
+  box-shadow: 0px 3px 0px 0px #ce961f inset;
 }
 
 .services-text {
