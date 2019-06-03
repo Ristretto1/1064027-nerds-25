@@ -213,8 +213,10 @@
       <h2 class="visually-hidden">Клиенты</h2>
       <div class="customers-wrapper">
         <ul class="сustomers">
-          <li class="сustomers-logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"
+          <li>
+            <a
+              href="https://htmlacademy.ru/intensive/htmlcss"
+              class="сustomers-logo"
               ><img
                 src="img/htmlacdemy-logo.png"
                 alt="Логотип HTML-Academy"
@@ -222,8 +224,8 @@
                 height="68"
             /></a>
           </li>
-          <li class="сustomers-logo">
-            <a href="#"
+          <li class="cust-logo-wrapper cust-logo-wrapper-1">
+            <a href="#" class="сustomers-logo"
               ><img
                 src="img/borodinsli-logo.png"
                 alt="Логотип Барбершопа Бородинский"
@@ -231,8 +233,8 @@
                 height="90"
             /></a>
           </li>
-          <li class="сustomers-logo">
-            <a href="#"
+          <li class="cust-logo-wrapper cust-logo-wrapper-2">
+            <a href="#" class="сustomers-logo"
               ><img
                 src="img/pink-logo.png"
                 alt="Логотип сервиса Pink"
@@ -240,8 +242,8 @@
                 height="52"
             /></a>
           </li>
-          <li class="сustomers-logo">
-            <a href="#"
+          <li class="cust-logo-wrapper cust-logo-wrapper-3">
+            <a href="#" class="сustomers-logo"
               ><img
                 src="img/mishka-logo.png"
                 alt="Логотип интернет-магазина Мишка"
@@ -283,21 +285,39 @@
             class="social-button social-button-vk"
             href="#"
             aria-label="Нёрдс Вконтакте"
-          ></a>
+            ><img
+              class="social-icon social-icon-vk"
+              src="img/vk-icon.svg"
+              width="26"
+              height="15"
+              alt="Нёрдс Вконтакте"
+          /></a>
         </li>
         <li>
           <a
             class="social-button social-button-fb"
             href="#"
             aria-label="Нёрдс в Фейсбуке"
-          ></a>
+            ><img
+              class="social-icon social-icon-fb"
+              src="img/fb-icon.svg"
+              width="12"
+              height="22"
+              alt="Нёрдс в Фейсбуке"
+          /></a>
         </li>
         <li>
           <a
             class="social-button social-button-insta"
             href="#"
             aria-label="Нёрдс в Инстаграме"
-          ></a>
+            ><img
+              class="social-icon social-icon-insta"
+              src="img/insta-icon.svg"
+              width="21"
+              height="21"
+              alt="Нёрдс в Инстаграме"
+          /></a>
         </li>
       </ul>
       <div class="loyalty">
@@ -309,54 +329,51 @@
     <!-- Модальное окно -->
 
     <section class="modal modal-feedback" id="modal">
-        <button
-          class="modal-close"
-          type="button"
-        ></button>
-        <form
-          class="feedback-form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <fieldset class="feedback-block">
-            <legend class="feedback-title">Напишите нам</legend>
-            <div class="feedback-wrapper">
-              <p class="feedback-item">
-                <label for="name"> Ваше имя:</label>
-                <input
-                  class="feedback-name"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Имя Фамилия"
-                />
-              </p>
-              <p class="feedback-item">
-                <label for="email">Ваш e-mail:</label>
-                <input
-                  class="feedback-email"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="email@example.com"
-                />
-              </p>
-              <p class="feedback-item">
-                <label for="text">Текст письма:</label>
-                <textarea
-                  class="feedback-text"
-                  name="text"
-                  placeholder="В свободной форме"
-                  id="text"
-                  rows="4"
-                ></textarea>
-              </p>
-            </div>
-            <button class="feedback-btn" type="submit">
-              Отправить
-            </button>
-          </fieldset>
-        </form>
-      </section>
-    </body>
-  </html>
+      <button class="modal-close" type="button"></button>
+      <form
+        class="feedback-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <fieldset class="feedback-block">
+          <legend class="feedback-title">Напишите нам</legend>
+          <div class="feedback-wrapper">
+            <p class="feedback-item">
+              <label for="name"> Ваше имя:</label>
+              <input
+                class="feedback-name"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя Фамилия"
+              />
+            </p>
+            <p class="feedback-item">
+              <label for="email">Ваш e-mail:</label>
+              <input
+                class="feedback-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@example.com"
+              />
+            </p>
+            <p class="feedback-item">
+              <label for="text">Текст письма:</label>
+              <textarea
+                class="feedback-text"
+                name="text"
+                placeholder="В свободной форме"
+                id="text"
+                rows="4"
+              ></textarea>
+            </p>
+          </div>
+          <button class="feedback-btn" type="submit">
+            Отправить
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
