@@ -625,6 +625,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 38px;
+  padding-bottom: 53px;
 }
 
 .social {
