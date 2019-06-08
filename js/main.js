@@ -6,6 +6,7 @@ var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
 var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
+var text = popup.querySelector("[name=text]");
 
 var isStorageSupport = true;
 var storage = "";
@@ -35,7 +36,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
+  if (!name.value || !email.value || !text.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
@@ -43,6 +44,7 @@ form.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", name.value);
+      localStorage.setItem("email", email.value);
     }
   }
 });
