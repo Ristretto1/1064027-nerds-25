@@ -574,7 +574,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
-  position: absolute;
+  position: relative;
   z-index: 100;
 
   width: 220px;
@@ -1233,7 +1233,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 64px;
+  padding-top: 24px;
   padding-left: 14px;
 }
 
@@ -1256,8 +1256,9 @@ input[type="radio"].visually-hidden {
 
 .catalog-item::before {
   content: "";
-  position: absolute;
-  top: -40px;
+  position: relative;
+  top: 0;
+  display: block;
 
   width: 360px;
   height: 40px;
