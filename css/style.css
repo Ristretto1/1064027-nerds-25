@@ -1193,7 +1193,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   width: 25px;
-  height: 25px;
+  height: 26px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
