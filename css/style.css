@@ -444,6 +444,7 @@ input[type="radio"].visually-hidden {
 .advantages-text {
   margin-top: 33px;
   margin-bottom: 38px;
+  width: 650px;
 }
 
 .advantages-list-title,
@@ -611,7 +612,7 @@ input[type="radio"].visually-hidden {
   z-index: 100;
 
   width: 220px;
-  padding: 30px 48px 47px 51px;
+  padding: 31px 48px 47px 51px;
 
   background-color: #ffffff;
 }
@@ -630,6 +631,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  width: 210px;
 }
 
 .contacts-btn {
